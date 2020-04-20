@@ -1,9 +1,16 @@
 version: 2.1
 
+jobs:
+  build:
+    executor:
+      name: octo-exp/default
+    steps:
+      - octo-exp/install-tools
+      - octo-exp/create-release:
+          api_key: API-SDKFLELWCQGY5KQV6PRFKW58AG
+          project: test
+          release_number: 1.2.3
+          server: 'http://localhost/octopus'
 orbs:
-  maven: circleci/maven@0.0.12
-
-workflows:
-  maven_test:
-    jobs:
-      - maven/test # checkout, build, test, and upload test results
+  octo-exp: octopus-samples/octo-exp@0.0.3
+version: 2.1
