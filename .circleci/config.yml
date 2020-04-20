@@ -13,4 +13,4 @@ jobs:
           server: 'http://localhost/octopus'
 orbs:
   octo-exp: octopus-samples/octo-exp@0.0.3
-version: 2.1
+
