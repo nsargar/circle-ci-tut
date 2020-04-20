@@ -26,4 +26,14 @@ class DemoApplicationTests {
 		Mockito.verify(mockList).add("Pankaj");
 	}
 
+
+	@Test
+	void contextLoads1() {
+		List<String> mockList = Mockito.mock(List.class);
+		mockList.add("Pankaj");
+		mockList.size();
+
+		Mockito.verify(mockList).add("Pankaj");
+	}
+
 }
