@@ -10,7 +10,7 @@ jobs:
           api_key: API-SDKFLELWCQGY5KQV6PRFKW58AG
           project: test
           release_number: 1.2.3
-          server: 'http://localhost/octopus'
+          server: 'http://localhost:80/octopus'
 orbs:
   octo-exp: octopus-samples/octo-exp@0.0.3
 
